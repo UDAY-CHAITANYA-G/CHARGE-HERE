@@ -1,0 +1,375 @@
+body{
+    background-color: #000000   ;
+}
+a{
+    color: #fff;
+}
+
+/* top */
+.top{
+    background-color: black;
+    height: 800px;
+}
+.title-image{
+    height: 800px;
+    width: 100%;
+}
+.title1{
+    background: linear-gradient( 180deg, #fdfdfd -1.62%, #ffffff 24.99%, #ffffff 47.4%, #f7fffa 77.04%, #ededed 107.03% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    font-size: 130px;
+    color: black;
+    top: -600px;
+    margin-left: 50px;
+}
+.tag{
+    position: relative;
+    font-size: 40px;
+    margin-top: -700px; 
+    color: white;
+    margin-left: 300px;
+    margin-right: 600px;
+}
+
+/* body*/
+.body1{
+    background-color: black;
+    height: 5460px;
+}
+p{
+    margin-top: 50px;
+    color: white;
+    
+}
+h3{
+    color: white;
+    position: relative;
+    top: 20px;
+}
+.headline1{
+    position: relative;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 25px;
+    background-color: white;
+    color: #000000;
+}
+.line1{
+    position: relative;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+    font-size: 17px;
+    
+}
+
+.line2{
+    position: relative;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    
+}
+
+.headline2{
+    position: relative;
+    margin-left: 350px;
+    margin-right: 350px;
+    
+    background-color: white;
+    color: #000000;
+    font-size: 22px;
+}
+.sub-headline1{
+    position:relative;
+    margin-left: 380px;
+    margin-right: 400px;
+    top: 0px;
+    font-size: 25px;
+}
+.line3{
+    position: relative;
+    margin-left: 400px;
+    margin-right: 420px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    
+}
+
+.box{
+    height: 150px;
+    background-color: #ffffff;
+    margin-left: 430px;
+    margin-right: 430px;
+    position: relative;
+}
+.line4{
+    top: 40px;
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 23px;
+    text-align: center;
+    
+}
+
+.headline3{
+    position: relative;
+    margin-left: 400px;
+    margin-right: 400px;
+    font-size: 23px;
+    background-color: white;
+    color: #000000;
+    
+}
+/* types */
+.types{
+    color: #f7fffa;
+    margin-left: 570px;
+    margin-bottom: 20px;
+    margin-right: 600px;
+    font-size: 20px;
+    position: relative;
+    top: 15px;
+}
+/* Rack-mount Lithium Batteries */
+.type-1{
+    position: relative;
+    margin-left: 450px;
+    margin-right: 450px;
+    font-size: 23px;
+    background-color: white;
+    color: #000000;  
+}
+.battery1{
+    width: 300px;
+    position: relative;
+    margin-left: 380px;
+}
+.line5{
+    position: relative;
+    margin-left: 710px;
+    margin-right: 300px;
+    top: -350px;
+    font-size: 15px;
+}
+.sub-headline2{
+    position: relative;
+    margin-left: 450px;
+    margin-right: 450px;
+    font-size: 20px;
+    background-color: white;
+    color: #000000; 
+    top: -250px;
+
+}
+.sub-headline2-1{
+    position: relative;
+    margin-left: 500px;
+    margin-right: 400px;
+    top: -270px;
+    font-size: 20px;
+}
+.line6{
+    position: relative;
+    margin-left: 600px;
+    margin-right: 420px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    top: -270px;
+    
+}
+/* High power lithium-ion battery */
+.type-2{
+    position: relative;
+    margin-left: 450px;
+    margin-right: 450px;
+    font-size: 20px;
+    background-color: white;
+    color: #000000; 
+    top: -220px; 
+}
+.battery2{
+    width: 450px;
+    position: relative;
+    margin-left: 850px;
+    top: -230px;
+}
+.line7{
+    position: relative;
+    margin-left: 430px;
+    margin-right: 680px;
+    top: -580px;
+    font-size: 18px;
+    text-align: right;
+}
+.sub-headline3{
+    position: relative;
+    margin-left: 450px;
+    margin-right: 450px;
+    font-size: 20px;
+    background-color: white;
+    color: #000000; 
+    top: -550px;
+
+}
+.sub-headline2-2{
+    position: relative;
+    margin-left: 500px;
+    margin-right: 400px;
+    top: -570px;
+    font-size: 20px;
+}
+.line8{
+    position: relative;
+    margin-left: 600px;
+    margin-right: 420px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    top: -570px;
+    
+}
+
+
+
+/* High energy density lithium batteries */
+.type-3{
+    position: relative;
+    margin-left: 450px;
+    margin-right: 450px;
+    font-size: 20px;
+    background-color: white;
+    color: #000000; 
+    top: -520px; 
+}
+.battery3{
+    width: 750px;
+    position: relative;
+    margin-left: 400px;
+    top: -530px;
+}
+.line9{
+    position: relative;
+    margin-left: 500px;
+    margin-right: 500px;
+    top: -570px;
+    font-size: 18px;
+    text-align: center;
+}
+.sub-headline4{
+    position: relative;
+    margin-left: 450px;
+    margin-right: 450px;
+    font-size: 20px;
+    background-color: white;
+    color: #000000; 
+    top: -550px;
+
+}
+.sub-headline2-3{
+    position: relative;
+    margin-left: 500px;
+    margin-right: 400px;
+    top: -570px;
+    font-size: 20px;
+}
+.line10{
+    position: relative;
+    margin-left: 600px;
+    margin-right: 420px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    top: -570px;
+    
+}
+/* battery modal image */
+.battery4{
+    position: relative;
+    margin-left: 450px;
+    width: 700px;
+    top: -530px;
+}
+
+/* bottom */
+.bottom1{
+    height: 300px;
+    position: relative;
+}
+.end-logo{
+    position: relative;
+    margin-left: 120px;
+    margin-bottom: 20px;
+    margin-right: 1100px;
+
+    font-size: 38px;
+    color: #f7fffa;
+}
+
+.end-tag{
+    position: relative;
+    margin-left: 132px;
+    margin-right: 1100px;
+    font-size: 9px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Ev-drivers{
+    position: relative;
+    margin-left: 450px;
+    margin-right: 900px;
+    
+    margin-top: -82px
+   
+}
+
+.Station-Owner {
+    position: relative;
+    margin-left: 450px;
+    margin-right: 900px;
+    
+    margin-top: -10px;
+}
+
+.Products{
+    
+    margin-left: 650px;
+    position: relative;
+    margin-right: 700px;
+    margin-top: -260px
+
+}
+
+.Use-cases {
+    position: relative;
+    margin-left: 850px;
+    margin-right: 500px;
+    margin-top: -135px;
+}
+
+.About-us {
+    margin-left: 1050px;
+    position: relative;
+    margin-right: 300px;
+    margin-top: -204px;
+}
+.gap{
+    position: relative;
+    margin-top: 15px;
+}
+.gap1{
+    position: relative;
+    margin-bottom:40px;
+    font-size: 20px;
+
+}

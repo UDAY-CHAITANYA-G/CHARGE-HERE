@@ -1,0 +1,275 @@
+
+body{
+    background-color: black;
+    height: 740px;
+    margin: 0px;
+}
+
+
+
+
+
+
+/*navi bar*/
+
+
+.menu{
+    background-color:rgb(63, 71, 78);
+    height: 740px;
+}
+
+.nav{
+    width: 50px;
+    height: 740px;
+    background-color: white;
+    position: fixed;
+}
+.image1{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 50px;
+    position: fixed;
+}
+.image2{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 200px;
+    position: fixed;
+}
+
+.image3{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 250px;
+    position: fixed;
+}
+
+.image4{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 300px;
+    position: fixed;
+}
+.image7{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 350px;
+    position: fixed;
+}
+.image5{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 450px;
+    position: fixed;
+}
+
+.image6{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 500px;
+    position: fixed;
+}
+
+/* level1 info */
+
+.title{
+    position: relative;
+    background-color: #6d686861;
+    width: 1270px;
+    height: 50px;
+    font-size: 25px;
+    left: 150px;
+    color: #f2eaea;
+    top: -700px;
+}
+
+.title1{
+    position: relative;
+    left: 10px;
+    text-align: left;
+    top:9px;
+
+}
+.title1-1{
+    position: relative;
+    left: 10px;
+    text-align: right;
+    left:830px;
+    top:9px; 
+
+}
+
+/* station1 info*/
+.station-1{
+    position: relative;
+    background-color: #6d686861;
+    width: 400px;
+    height: 250px;
+   
+    left: 150px;
+    color: #f2eaea;
+    top: -650px;
+
+
+}
+
+.station-1:hover {
+    background-color: rgb(0 19 27);
+}
+.rating{
+    position: relative;
+    width: 130px;
+    height: 30px;
+    top: 30px;
+    left: 8px;
+    background-color:#6d686861;
+}
+.rating1{
+    position: relative;
+    font-size: 15px ;
+    top:7px;
+    left:10px;
+    color: white;
+    text-align: left;
+}
+
+.rating2{
+    position: relative;
+    font-size: 15px ;
+    top:7px;
+    left:40px;
+    color: white;
+    text-align: right;
+    
+}
+
+.details{
+    position: relative;
+    width: 240px;
+    height: 230px;
+    top: -150px;
+    left: 150px;
+    background-color: #6d686861;
+
+}
+
+.name1{
+    position: relative;
+    font-size: 20px;
+    color: white;
+    left: 5px;
+    top: 5px;
+}
+
+.address-block{
+    position: relative;
+    width: 240px;
+    height: 100px;
+}
+.address{
+    position: relative;
+    left: 5px;
+}
+
+.slots{
+    position: relative;
+    width: 94px;
+    height: 104px;
+    border: solid;
+}
+
+.price{
+    position: relative;
+    width: 134px;
+    height: 104px;
+    left: 100px;
+    top: -109px;
+    border: solid;
+
+}
+.slots-title{
+    position: relative;
+    font-size: 20px;
+    left: 10px;
+}
+
+.slots-avaliable{
+    position: relative;
+    font-size: 29px;
+    left: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* station2 info*/
+.station-2{
+    position: relative;
+    background-color: #6d686861;
+    width: 400px;
+    height: 250px;
+    left: 585px;
+    color: #f2eaea;
+    top: -900px;
+
+}
+
+
+.station-3{
+    position: relative;
+    background-color: #6d686861;
+    width: 400px;
+    height: 250px;
+    left: 1020px;
+    color: #f2eaea;
+    top: -1150px;
+}
+.station-4{
+    position: relative;
+    background-color: #6d686861;
+    width: 400px;
+    height: 250px;
+    left: 150px;
+    color: #f2eaea;
+    top: -1110px;
+}
+.station-5{
+    position: relative;
+    background-color: #6d686861;
+    width: 400px;
+    height: 250px;
+    left: 580px;
+    color: #f2eaea;
+    top: -1360px;
+}
+
+.image11{
+    position: relative;
+    top: 40px;
+    left: 40px;
+    width: 30px;
+    height: 30px;
+}
+.image-sec{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 130px;
+    height: 130px;
+    background-color: white;
+
+}
+
+
+

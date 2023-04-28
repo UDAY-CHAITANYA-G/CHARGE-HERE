@@ -1,0 +1,239 @@
+body{
+    background-color: black;
+    height: 740px;
+    margin: 0px;
+}
+
+
+
+
+
+
+/*navi bar*/
+
+
+.menu{
+    background-color:rgb(63, 71, 78);
+    height: 740px;
+}
+
+.nav{
+    width: 50px;
+    height: 740px;
+    background-color: white;
+}
+.image1{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 50px;
+    position: fixed;
+}
+.image2{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 200px;
+    position: fixed;
+}
+
+.image3{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 250px;
+    position: fixed;
+}
+
+.image4{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 300px;
+    position: fixed;
+}
+.image7{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 350px;
+    position: fixed;
+}
+.image5{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 450px;
+    position: fixed;
+}
+
+.image6{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 500px;
+    position: fixed;
+}
+
+/* dashboard */
+
+.name{
+    background-color: rgb(63, 71, 78);
+    color: white;
+    width: 400px;
+    height: 33px;
+    position: relative;
+    margin-left: 100px;
+    
+    top: -700px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 24px;
+
+}
+
+.charging-percentage{
+    background-color:rgb(63, 71, 78);
+    color: white;
+    position: relative;
+    margin-left: 100px;
+    width: 300px;
+    height: 300px;
+
+    top: -660px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 24px;
+
+
+}
+
+.title1{
+    position: relative;
+    top: 15px;
+    left: 25px;
+}
+
+.pi-chart{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 22px;
+    left: 25px;
+}
+
+.energy-used{
+    position: relative;
+    top: -960px;
+    left: 500px;
+    background-color: rgb(63, 71, 78);
+    height: 300px;
+    width: 890px;
+    font-size: 24px;
+    color: white;
+}
+.title2{
+    top: 15px;
+    left: 25px;
+    position: relative;
+
+}
+.enegry{
+    position: relative;
+    left: 20px;
+    top: 30px;
+    font-size: 20px;
+    border: white;
+    border: solid;
+    border-spacing: 10px;   
+     
+}
+
+td{
+    text-align: center;
+}
+
+.tag1{
+    position: relative;
+    color: white;
+    font-size: 17px;
+    left: 183px;
+    top: 26px;
+    border: solid;
+}
+.enegry1{
+    position: relative;
+    left: 450px;
+    top: -186px;
+    font-size: 20px;
+    border: white;
+    border: solid;
+    border-spacing: 10px; 
+     
+}
+.tag2{
+    position: relative;
+    color: white;
+    font-size: 17px;
+    left: 556px;
+    top: 29px;
+    border: solid;
+
+}
+
+.schedule-date{
+    margin-left: 125px;
+    position: relative;
+    height: 250px;
+    width: 300px;
+    top: -900px;
+    left: 0px;
+    color: white;
+    background-color: rgb(63, 71, 78);
+}
+
+.tille3{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-size: 27px;
+}
+
+.table1{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 20px;
+    border: white;
+    border: solid;
+    border-spacing: 10px;   
+
+}
+
+.payment-details{
+    position: relative;
+    height: 250px;
+    width: 950px;
+    top: -180px;
+    left: 400px;
+    background-color: rgb(63, 71, 78);
+    color: white;
+}
+
+.tille4{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-size: 27px;
+}
+
+.table2{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 20px;
+    border: white;
+    border: solid;
+    border-spacing: 0px;   
+}
+th{
+    border: solid;
+    border-width: 1px;
+}
+td{
+    border: solid;
+    border-width: 1px;
+}

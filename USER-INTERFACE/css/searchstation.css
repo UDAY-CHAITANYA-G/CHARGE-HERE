@@ -1,0 +1,251 @@
+body{
+    background-color: black;
+    height: 740px;
+    margin: 0px;
+}
+
+
+
+
+
+
+/*navi bar*/
+
+
+.menu{
+    background-color:rgb(63, 71, 78);
+    height: 740px;
+}
+
+.nav{
+    width: 50px;
+    height: 740px;
+    background-color: white;
+}
+.image1{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 50px;
+    position: fixed;
+}
+.image2{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 200px;
+    position: fixed;
+}
+
+.image3{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 250px;
+    position: fixed;
+}
+
+.image4{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 300px;
+    position: fixed;
+}
+.image7{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 350px;
+    position: fixed;
+}
+.image5{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 450px;
+    position: fixed;
+}
+
+.image6{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 500px;
+    position: fixed;
+}
+
+/* level of chargers */
+
+
+
+.set-1{
+    position: relative;
+    background-color: bisque;
+    height:730px ;
+    width: 490px;
+    left:50px;
+    top: -740px;
+}
+ 
+.set-1-image{
+    height:740px ;
+    width: 490px;
+
+
+}
+
+.box1-1{
+    background-color: rgb(26 21 21);
+    height: 50px;
+    width: 250px;
+    position: relative;
+    top: -220px;
+    color: white;
+    font-size: 30px;
+    text-align:center;
+}
+.box2-1{
+    background-color: rgb(26 21 21);
+    height: 50px;
+    width: 200px;
+    position: relative;
+    top: -200px;
+    color: white;
+    font-size: 30px;
+    text-align:center;
+}
+.box3-1{
+    background-color: rgb(26 21 21);
+    height: 50px;
+    width: 350px;
+    position: relative;
+    top: -180px;
+    color: white;
+    font-size: 30px;
+    text-align:center;
+}
+
+.box-top{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 300px;
+    position: relative;
+    top: -850px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    left: 190px;
+    text-align: right;
+}
+.word{
+    top:9px;
+    position: relative;
+}
+
+
+
+.set-2{
+    position: relative;
+    background-color: #ca9b64;
+    height: 740px;
+    width: 490px;
+    left: 540px;
+    top: -1470px;
+}
+.set-2-image{
+    height:740px ;
+    width: 490px;
+
+
+}
+.box1-1{
+    background-color: rgb(26 21 21);
+    height: 50px;
+    width: 250px;
+    position: relative;
+    top: -220px;
+    color: white;
+    font-size: 30px;
+    text-align:center;
+}
+.box2-1{
+    background-color: rgb(26 21 21);
+    height: 50px;
+    width: 200px;
+    position: relative;
+    top: -200px;
+    color: white;
+    font-size: 30px;
+    text-align:center;
+}
+.box3-1{
+    background-color: rgb(26 21 21);
+    height: 50px;
+    width: 350px;
+    position: relative;
+    top: -180px;
+    color: white;
+    font-size: 30px;
+    text-align:center;
+}
+
+.box-top-1{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 490px;
+    position: relative;
+    top: -850px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    left: 0px;
+    text-align: center;
+}
+.set-3{
+    position: relative;
+    background-color: bisque;
+    height:740px ;
+    width: 490px;
+    left:1029px;
+    top: -2210px;
+}
+.set-3-image{
+    height:740px ;
+    width: 490px;
+
+}
+.box1-1{
+    background-color: rgb(26 21 21);
+    height: 50px;
+    width: 250px;
+    position: relative;
+    top: -220px;
+    color: white;
+    font-size: 30px;
+    text-align:center;
+}
+.box2-2{
+    background-color: rgb(26 21 21);
+    height: 50px;
+    width: 170px;
+    position: relative;
+    top: -200px;
+    color: white;
+    font-size: 30px;
+    text-align:center;
+}
+.box3-1{
+    background-color: rgb(26 21 21);
+    height: 50px;
+    width: 350px;
+    position: relative;
+    top: -180px;
+    color: white;
+    font-size: 30px;
+    text-align:center;
+}
+
+.box-top-2{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 250px;
+    position: relative;
+    top: -850px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    left: 0px;
+    right: -190px;
+    text-align: left;
+}

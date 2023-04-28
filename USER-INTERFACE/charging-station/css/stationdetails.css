@@ -1,0 +1,253 @@
+body{
+    background-color: black;
+    height: 740px;
+    margin: 0px;
+}
+
+
+
+
+
+
+/*navi bar*/
+
+
+.menu{
+    background-color:rgb(63, 71, 78);
+    height: 740px;
+}
+
+.nav{
+    width: 50px;
+    height: 740px;
+    background-color: white;
+}
+.image1{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 50px;
+    position: fixed;
+}
+.image2{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 200px;
+    position: fixed;
+}
+
+.image3{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 250px;
+    position: fixed;
+}
+
+.image4{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 300px;
+    position: fixed;
+}
+.image7{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 350px;
+    position: fixed;
+}
+.image5{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 450px;
+    position: fixed;
+}
+
+.image6{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 500px;
+    position: fixed;
+}
+
+hr{
+    border: solid;
+    
+    color:rgb(63, 71, 78) ;
+}
+
+/* station details*/
+
+.station-details{
+    position: relative;
+    width: 600px;
+    height: 200px;
+    left: 100px;
+    top: -700px;
+    background-color: #6d686861;
+    color: white;
+}
+.station-name{
+    font-size: 30px;
+    left: 5px;
+    top:5px;
+    position: relative;
+}
+
+.address{
+    top:5px;
+    position: relative;
+    left: 5px;
+    font-size: 20px;
+}
+
+.book-station{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background-color: #6d686861;
+    color: white;
+    left: 100px;
+    top: -680px;
+}
+
+.booking-line{
+    position: relative;
+    left: 5px;
+    top:5px;
+    font-size: 20px;
+}
+/*clander*/
+.calendar-wrapper {
+    width: 300px;
+    color: white;
+    
+}
+.calendar {
+    display: grid ;
+    grid-template-columns: repeat(7, 1fr);
+   
+}
+  
+.first-day {
+    grid-column-start: 4;
+}
+  
+  
+.day-name {
+    background-color: #6d686861 ;
+    position: relative;
+   
+}
+.day{
+    position: relative;
+    top:8px;
+    left: 5px;
+}
+  
+.month {
+    text-align: center;
+}
+ol {
+    list-style: none;
+    margin: 0;
+    border: solid;
+    padding: 0;
+    text-align: center;
+    height: 220px;
+    position: relative;
+    left: 10px;
+}
+li {
+    padding: 2px; 
+    border: solid;
+    border-width: 0.5px;
+    text-align: center;
+   
+}
+.date{
+    position: relative;
+    top:8px;
+   
+}
+
+li:hover{
+    background-color:rgb(63, 71, 78);
+    color: rgb(252, 249, 249);
+}
+/*slot-details*/
+.slot-details{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: -210px;
+    left: 360px;
+    background-color: rgb(63, 71, 78);
+    border: solid;
+
+}
+.slot-details1{
+    font-size: 20px;
+    position: relative;
+    top:10px;
+    left:11px;
+    color: rgb(8, 6, 6);
+    background-color: rgb(254, 252, 252);
+}
+
+/*booking status*/
+.booking-status{
+    position: relative;
+    top: -150px;
+    width: 600px;
+    height: 100px;
+    background-color: #6d686861;
+    
+}
+.status-name{
+   
+        font-size: 20px;
+        left: 5px;
+        top:5px;
+        position: relative;
+    
+
+}
+.table2{
+    position: relative;
+    left: 20px;
+    top: -565px;
+    font-size: 16px;
+    border: white;
+    border: solid;
+    border-width: 0.5px;
+    border-spacing: 0px;
+}
+th{
+    border: solid;
+    border-width: 0.5px;
+}
+td{
+    border: solid;
+    border-width: 0.5px;
+}
+a{
+    color: white;
+}
+.map{
+
+    position: relative;
+    top: -637px;
+    left: 700px;
+    width: 650px;
+    height: 568px;
+    background-color: #6d686861;
+    
+    
+
+}
+.location-name{
+   
+    font-size: 20px;
+    left: 5px;
+    top:5px;
+    position: relative; 
+}

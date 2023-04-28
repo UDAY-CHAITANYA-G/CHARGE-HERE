@@ -1,0 +1,110 @@
+body{
+    background-color: black;
+    height: 740px;
+    margin: 0px;
+}
+
+
+
+
+
+
+/*navi bar*/
+
+
+.menu{
+    background-color:rgb(63, 71, 78);
+    height: 740px;
+}
+
+.nav{
+    width: 50px;
+    height: 740px;
+    background-color: white;
+}
+.image1{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 50px;
+    position: fixed;
+}
+.image2{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 200px;
+    position: fixed;
+}
+
+.image3{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 250px;
+    position: fixed;
+}
+
+.image4{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 300px;
+    position: fixed;
+}
+.image7{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 350px;
+    position: fixed;
+}
+.image5{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 450px;
+    position: fixed;
+}
+
+.image6{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 500px;
+    position: fixed;
+}
+
+.booking-status{
+    position: relative;
+    top: -700px;
+    left: 200px;
+    width: 1000px;
+    height: 600px;
+    background-color: #6d686861;
+    
+}
+.status-name{
+   
+        font-size: 20px;
+        left: 5px;
+        top:5px;
+        position: relative;
+    
+
+}
+.table2{
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-size: 25px;
+    border: white;
+    border: solid;
+    border-width: 0.5px;
+    border-spacing: 0px;
+}
+th{
+    border: solid;
+    border-width: 0.5px;
+}
+td{
+    border: solid;
+    border-width: 0.5px;
+}
+a{
+    color: white;
+}
+
