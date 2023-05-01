@@ -14,7 +14,7 @@ const passportLocalMongoose = require("passport-local-mongoose");
 const UserLoginRoute = require("./Routes/User/Authentication/Login");
 const UserSignupRoute = require("./Routes/User/Authentication/Signup");
 const MainRoute = require("./Routes/Main/Home");
-
+const UserInterface = require("./Routes/User/Interface/Main");
 //Schema
 const Auth = require("./Schema/Auth");
 
@@ -47,6 +47,7 @@ app.use("/",MainRoute);
 //User Interface
 app.use("/login",UserLoginRoute);
 app.use("/signup",UserSignupRoute);
+app.use("/user",UserInterface);
 
 //Owner Interface
 

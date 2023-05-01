@@ -19,6 +19,4 @@ Router.get("/usecases",function(req,res){
     res.render("usecases");
 });
 
-
-
 module.exports = Router;

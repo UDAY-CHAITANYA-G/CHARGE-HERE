@@ -5,51 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
 </head>
 <body>
     <div class="menu">
-        <div class="nav">
-            <div class="icon1">
-                <a href=""><img class=image1 src="images/house-blank.png" alt=""></a>
-
-            </div>
-            <br>
-            <div class="icon2">
-                <a href="dashboard.html"><img class=image2 src="images/dashboard.png" alt=""></a>
-
-
-            </div>
-            <br>
-            <div class="icon3">
-                <a href="searchstation.html"><img class=image3 src="images/search.png" alt=""></a>
-
-            </div>
-            <div class="icon4">
-                <a href="paymentdetails.html"><img class=image4 src="images/money-check-edit.png" alt=""></a>
-
-            </div>
-            <div class="icon7">
-                <a href="schedule.html"><img class=image7 src="images/calendar.png" alt=""></a>
-
-            </div>
-            
-            <div class="icon5">
-                <a href="useraccount.html"><img class=image5 src="images/user.png" alt=""></a>
-
-            </div>
-            <br>
-            <div class="icon6">
-                <a href="help.html"><img class=image6 src="images/interrogation (1).png"></a>
-
-            </div>
-        </div>
+        <%- include("partials/bar") %>
 
         <div class="name"> Welcome,Uday</div>
 
         <div class="charging-percentage">
             <a class="title1">Charging-Status</a>
-            <img class="pi-chart" src="images/DataGlossary_Icons_Pie Chart.jpg" alt="">
+            <img class="pi-chart" src="/images/DataGlossary_Icons_Pie Chart.jpg" alt="">
         </div>
 
         <div class="energy-used">
