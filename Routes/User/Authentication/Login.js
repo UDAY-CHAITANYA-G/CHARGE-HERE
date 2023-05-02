@@ -20,6 +20,7 @@ Router.post("/",function(req,res){
         }
         else{
             passport.authenticate("local")(req,res,function(){
+                req.session.role = "user";
                 res.redirect("/user");
             });
         }

@@ -1,0 +1,221 @@
+body{
+    background-color: black;
+    height: 740px;
+    margin: 0px;
+}
+
+
+
+
+
+
+/*navi bar*/
+
+
+.menu{
+    background-color:rgb(63, 71, 78);
+    height: 740px;
+}
+
+.nav{
+    width: 50px;
+    height: 740px;
+    background-color: white;
+}
+.image1{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 50px;
+    position: fixed;
+}
+.image2{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 200px;
+    position: fixed;
+}
+
+.image3{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 250px;
+    position: fixed;
+}
+
+.image4{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 300px;
+    position: fixed;
+}
+.image7{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 350px;
+    position: fixed;
+}
+.image5{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 450px;
+    position: fixed;
+}
+
+.image6{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 500px;
+    position: fixed;
+}
+
+/*slots price */
+
+.primary_info{
+    background-color: #6d686861;
+    width: 33rem;
+    height: 12rem;
+    margin-left: 8rem;
+    position: relative;
+    top: -43rem;
+
+}
+
+.avalible-charging-levels {
+        background-color: #6d686861;
+        width: 18.5rem;
+        height: 10rem;
+        margin-left: 1rem;
+        position: relative;
+        top: 1rem;
+        text-align: center;
+        color: white;
+
+
+}
+
+.slots{
+    background-color: #6d686861;
+    width: 10.5rem;
+    height: 10rem;
+    left: 20rem;
+    margin-left: 1rem;
+    position: relative;
+    top: -8.9rem;
+    text-align: center;
+    color: white;
+}
+
+.line{
+    color: #2e292961;
+    
+    border-width: 0.5px;
+}
+
+.line1{
+    color: #2e292961;
+    
+    border-width: 0.5px;
+    position: relative;
+    top: -150px;
+}
+.headline{
+    color: white;
+    position:relative;
+    font-size: 20px;
+    top: 8px;
+    left:5px;
+}
+.headline1{
+    color: white;
+    position: relative;
+    top: -700px;
+    font-size: 30px;
+    left: 130px;
+}
+.headline2{
+    color: white;
+    position: relative;
+    top: -600px;
+    font-size: 39px;
+    left: 130px;
+}
+.primary_info1{
+    background-color: #6d686861;
+    width: 33rem;
+    height: 12rem;
+    margin-left: 8rem;
+    position: relative;
+    top: -37rem;
+}
+
+
+
+
+.avalible-charging-level{
+    background-color: #6d686861;
+    width: 8.5rem;
+    height: 10rem;
+    margin-left: 1rem;
+    position: relative;
+    top: 1rem;
+    text-align: center;
+    color: white;
+
+
+}
+
+.slot_booked{
+    background-color: #6d686861;
+    width: 50.5rem;
+    height: 40rem;
+    margin-left: 1rem;
+    position: relative;
+    top: -73rem;
+    left: 42rem;
+    border: solid;
+    text-align: center;
+    color: white;
+
+}
+th{
+    position: relative;
+    left:10px;
+    border: solid;
+    border-width: 1px;
+}
+td{
+    position: relative;
+    left:10px;
+
+    border: solid;
+    border-width: 1px;
+}
+.title2{
+    font-size: 30px;
+}
+
+.ENERGY_CONSUMPTION{
+    background-color: #6d686861;
+    width: 11.5rem;
+    height: 10rem;
+    left: 9rem;
+    margin-left: 1rem;
+    position: relative;
+    top: -9rem;
+    text-align: center;
+    color: white;
+}
+
+
+
+.PRICE{
+    background-color: #6d686861;
+    width: 10.5rem;
+    height: 10rem;
+    left: 21rem;
+    margin-left: 1rem;
+    position: relative;
+    top: -19rem;
+    text-align: center;
+    color: white;
+}

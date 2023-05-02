@@ -2,10 +2,11 @@ const express = require("express");
 
 const Router = express.Router();
 const searchRoute = require("./searchStation");
+const BookingRoute = require("./Book");
 
 
 Router.get("/",function(req,res){
-    if(req.isAuthenticated()){
+    if(req.isAuthenticated() && req.session.role === "user"){
         res.render("User/dashboard");
     }
     else{
@@ -14,7 +15,7 @@ Router.get("/",function(req,res){
 });
 
 Router.get("/dashboard",function(req,res){
-    if(req.isAuthenticated()){
+    if(req.isAuthenticated()&& req.session.role === "user"){
         res.render("User/dashboard");
     }
     else{
@@ -25,7 +26,7 @@ Router.get("/dashboard",function(req,res){
 
 
 Router.get("/schedule",function(req,res){
-    if(req.isAuthenticated()){
+    if(req.isAuthenticated()&& req.session.role === "user"){
         res.render("User/schedule");
     }
     else{
@@ -34,7 +35,7 @@ Router.get("/schedule",function(req,res){
 });
 
 Router.get("/account",function(req,res){
-    if(req.isAuthenticated()){
+    if(req.isAuthenticated()&& req.session.role === "user"){
         res.render("User/useraccount");
     }
     else{
@@ -43,7 +44,7 @@ Router.get("/account",function(req,res){
 });
 
 Router.get("/help",function(req,res){
-    if(req.isAuthenticated()){
+    if(req.isAuthenticated()&& req.session.role === "user"){
         res.render("User/help");
     }
     else{
@@ -52,7 +53,7 @@ Router.get("/help",function(req,res){
 });
 
 Router.get("/payment",function(req,res){
-    if(req.isAuthenticated()){
+    if(req.isAuthenticated()&& req.session.role === "user"){
         res.render("User/paymentdetails");
     }
     else{
@@ -61,5 +62,6 @@ Router.get("/payment",function(req,res){
 });
 
 Router.use("/search",searchRoute);
+Router.use("/book",BookingRoute);
 
 module.exports = Router;

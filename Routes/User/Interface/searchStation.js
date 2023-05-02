@@ -3,7 +3,7 @@ const express = require("express");
 const Router = express.Router();
 
 Router.get("/",function(req,res){
-    if(req.isAuthenticated()){
+    if(req.isAuthenticated()&& req.session.role === "user"){
         res.render("User/searchstation");
     }
     else{
@@ -12,7 +12,7 @@ Router.get("/",function(req,res){
 });
 
 Router.get("/level1",function(req,res){
-    if(req.isAuthenticated()){
+    if(req.isAuthenticated()&& req.session.role === "user"){
         res.render("User/level-1-stations");
     }
     else{
@@ -21,7 +21,7 @@ Router.get("/level1",function(req,res){
 });
 
 Router.get("/level2",function(req,res){
-    if(req.isAuthenticated()){
+    if(req.isAuthenticated()&& req.session.role === "user"){
         res.render("User/level-2-stations");
     }
     else{
@@ -30,7 +30,7 @@ Router.get("/level2",function(req,res){
 });
 
 Router.get("/level3",function(req,res){
-    if(req.isAuthenticated()){
+    if(req.isAuthenticated()&& req.session.role === "user"){
         res.render("User/level-3-stations");
     }
     else{

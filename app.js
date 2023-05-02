@@ -11,10 +11,15 @@ const passport = require("passport");
 const passportLocalMongoose = require("passport-local-mongoose");
 
 //Routes
+const MainRoute = require("./Routes/Main/Home");
+
 const UserLoginRoute = require("./Routes/User/Authentication/Login");
 const UserSignupRoute = require("./Routes/User/Authentication/Signup");
-const MainRoute = require("./Routes/Main/Home");
 const UserInterface = require("./Routes/User/Interface/Main");
+
+const OwnerLoginRoute = require("./Routes/Owner/Authentication/Login");
+const OwnerSignupRoute = require("./Routes/Owner/Authentication/Signup");
+const OwnerInterface = require("./Routes/Owner/Interface/Main");
 //Schema
 const Auth = require("./Schema/Auth");
 
@@ -50,7 +55,9 @@ app.use("/signup",UserSignupRoute);
 app.use("/user",UserInterface);
 
 //Owner Interface
-
+app.use("/ownerlogin",OwnerLoginRoute);
+app.use("/ownersignup",OwnerSignupRoute);
+app.use("/owner",OwnerInterface);
 
 app.listen(3000,function(){
     console.log("Server started on port 3000");

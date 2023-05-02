@@ -1,0 +1,178 @@
+body{
+    background-color: black;
+    height: 740px;
+    margin: 0px;
+}
+
+
+
+
+
+
+/*navi bar*/
+
+
+.menu{
+    background-color:rgb(63, 71, 78);
+    height: 740px;
+}
+
+.nav{
+    width: 50px;
+    height: 740px;
+    background-color: white;
+}
+.image1{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 50px;
+    position: fixed;
+}
+.image2{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 200px;
+    position: fixed;
+}
+
+.image3{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 250px;
+    position: fixed;
+}
+
+.image4{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 300px;
+    position: fixed;
+}
+.image7{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 350px;
+    position: fixed;
+}
+.image5{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 450px;
+    position: fixed;
+}
+
+.image6{
+    width: 30px;
+    margin-left: 9px;
+    margin-top: 500px;
+    position: fixed;
+}
+
+hr{
+    border: solid;
+    
+    color:rgb(63, 71, 78) ;
+}
+
+/* user account */
+.shop-image{
+    width: 600px;
+    height: 660px;
+    left: 100px;
+    top: -700px;
+    position: relative;
+    background-color: #6d686861;
+}
+.box{
+    width: 720px;
+    height: 660px;
+    left: 750px;
+    top: -700px;
+    position: relative;
+    background-color: #6d686861;
+}
+
+.headline{
+    color: white;
+    font-size: 20px;
+    top: 8px;
+    left:5px;
+}
+
+.photo{
+    background-color: white;
+    margin-left: 10px;
+    width: 10rem;
+    height: 10rem;
+}
+
+.personal-details {
+    background-color:#6d686861;
+    width: 33.5rem;
+    height: 18rem;
+    margin-left: 11rem;
+    position: relative;
+    top: -10rem;
+}
+
+.user-name {
+    font-size: 34px;
+    color: white;
+    position: relative;
+    left: 10px;
+    top: 5x;
+    top: 5px;
+}
+
+.line{
+    color: #2e292961;
+    
+    border-width: 0.5px;
+}
+
+.line1{
+    color: #2e292961;
+    
+    border-width: 0.5px;
+    position: relative;
+    top: -150px;
+}
+.details{
+    color: white;
+    margin-left: 5px;
+}
+
+.primary_info{
+    background-color: #6d686861;
+    width: 43rem;
+    height: 17rem;
+    margin-left: 1rem;
+    position: relative;
+    top: -9rem;
+
+}
+
+.avalible-charging-levels{
+    background-color: #6d686861;
+    width: 21.5rem;
+    height: 9rem;
+    margin-left: 1rem;
+    position: relative;
+    top: 1rem;
+    text-align: center;
+    color: white;
+
+
+}
+
+.slots{
+    background-color: #6d686861;
+    width: 19.5rem;
+    height: 9rem;
+    left: 22rem;
+    margin-left: 1rem;
+    position: relative;
+    top: -8rem;
+    text-align: center;
+    color: white;
+}
