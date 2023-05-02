@@ -118,202 +118,23 @@
                     <th>CHARGER TYPE</th>
                     <th> ENERGY CHARGED</th>
                 </tr>
-
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        01-03-2023
-                    </td>
-                    <td>
-                        9:00 AM
-                    </td>
-                    <td>ID:000000</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>type 1</td>
-                    <td>20kw</td>
-                </tr>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        01-03-2023
-                    </td>
-                    <td>
-                        9:00 AM
-                    </td>
-                    <td>ID:000000</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>type 1</td>
-                    <td>20kw</td>
-                </tr>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        01-03-2023
-                    </td>
-                    <td>
-                        9:00 AM
-                    </td>
-                    <td>ID:000000</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>type 1</td>
-                    <td>50kw</td>
-                </tr>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        01-03-2023
-                    </td>
-                    <td>
-                        9:00 AM
-                    </td>
-                    <td>ID:000000</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>type 1</td>
-                    <td>30kw</td>
-                </tr>
-                <tr>
-                    <td>
-                        2
-                    </td>
-                    <td>
-                        02-03-2023
-                    </td>
-                    <td>
-                        15:00 AM
-                    </td>
-                    <td>ID:000000</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>type 1</td>
-                    <td>60kw</td>
-                </tr>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        02-03-2023
-                    </td>
-                    <td>
-                        9:00 AM
-                    </td>
-                    <td>ID:000000</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>type 1</td>
-                    <td>20kw</td>
-                </tr>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        02-03-2023
-                    </td>
-                    <td>
-                        9:00 AM
-                    </td>
-                    <td>ID:000000</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>type 1</td>
-                    <td>20kw</td>
-                </tr>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        02-03-2023
-                    </td>
-                    <td>
-                        9:00 AM
-                    </td>
-                    <td>ID:000000</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>type 1</td>
-                    <td>20kw</td>
-                </tr>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        02-03-2023
-                    </td>
-                    <td>
-                        9:00 AM
-                    </td>
-                    <td>ID:000000</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>type 1</td>
-                    <td>20kw</td>
-                </tr>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        03-03-2023
-                    </td>
-                    <td>
-                        9:00 AM
-                    </td>
-                    <td>ID:000000</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>type 1</td>
-                    <td>20kw</td>
-                </tr>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        03-03-2023
-                    </td>
-                    <td>
-                        9:00 AM
-                    </td>
-                    <td>ID:000000</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>type 1</td>
-                    <td>20kw</td>
-                </tr>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        03-03-2023
-                    </td>
-                    <td>
-                        9:00 AM
-                    </td>
-                    <td>ID:000000</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>type 1</td>
-                    <td>20kw</td>
-                </tr>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        03-03-2023
-                    </td>
-                    <td>
-                        9:00 AM
-                    </td>
-                    <td>ID:000000</td>
-                    <td>XXXXXXXXXX</td>
-                    <td>type 1</td>
-                    <td>20kw</td>
-                </tr>
+<% histories.forEach(function(history){ %>
+    <tr>
+        <td>
+            1
+        </td>
+        <td>
+            <%= history.Date %>
+        </td>
+        <td>
+            <%= history.time %>
+        </td>
+        <td> <%= history.UserName %> </td>
+        <td><%= history.userMobile %></td>
+        <td> <%= history.chargerType %> </td>
+        <td><%= history.energyCharged %>kw</td>
+    </tr>
+    <% }); %>
             </table>
         </div>
 

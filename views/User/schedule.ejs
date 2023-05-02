@@ -32,160 +32,28 @@
                       book slot
                    </th>
                </tr>
+<% histories.forEach(function(history){ %>
+    <tr>
+        <td>
+            <%= history.Date %>
+        </td>
+        <td><%= history.StationName %></td>
+        <td>
+            <%= history.slotNumber %>
+        </td>
 
-               <tr>
-                   <td>
-                       03-03-2023
-                   </td>
-                   <td>station-1</td>
-                   <td>
-                       3
-                   </td>
-
-                   <td>
-                    8:00-16:00
-                   </td>
-                   <td>
-                     20$
-                   </td>
-                   <td>
-                      <a >booked</a>
-                   </td>
-               </tr>
-               <tr>
-                <td>
-                    03-03-2023
-                </td>
-                <td>station-1</td>
-                <td>
-                    3
-                </td>
-
-                <td>
-                 8:00-16:00
-                </td>
-                <td>
-                  20$
-                </td>
-                <td>
-                   <a >booked</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    03-03-2023
-                </td>
-                <td>station-1</td>
-                <td>
-                    3
-                </td>
-
-                <td>
-                 8:00-16:00
-                </td>
-                <td>
-                  20$
-                </td>
-                <td>
-                   <a >booked</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    03-03-2023
-                </td>
-                <td>station-1</td>
-                <td>
-                    3
-                </td>
-
-                <td>
-                 8:00-16:00
-                </td>
-                <td>
-                  20$
-                </td>
-                <td>
-                   <a >booked</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    03-03-2023
-                </td>
-                <td>station-1</td>
-                <td>
-                    3
-                </td>
-
-                <td>
-                 8:00-16:00
-                </td>
-                <td>
-                  20$
-                </td>
-                <td>
-                   <a >booked</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    03-03-2023
-                </td>
-                <td>station-1</td>
-                <td>
-                    3
-                </td>
-
-                <td>
-                 8:00-16:00
-                </td>
-                <td>
-                  20$
-                </td>
-                <td>
-                   <a >booked</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    03-03-2023
-                </td>
-                <td>station-1</td>
-                <td>
-                    3
-                </td>
-
-                <td>
-                 8:00-16:00
-                </td>
-                <td>
-                  20$
-                </td>
-                <td>
-                   <a >cancelled</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    03-03-2023
-                </td>
-                <td>station-1</td>
-                <td>
-                    3
-                </td>
-
-                <td>
-                 8:00-16:00
-                </td>
-                <td>
-                  20$
-                </td>
-                <td>
-                   <a >booked</a>
-                </td>
-            </tr>
-           
+        <td>
+            <%= history.time %>
+        </td>
+        <td>
+            <%= history.price %>$
+        </td>
+        <td>
+           <a > <%= history.status %> </a>
+        </td>
+    </tr> 
+    <% }); %>
+         
        </div>
     </div>
     

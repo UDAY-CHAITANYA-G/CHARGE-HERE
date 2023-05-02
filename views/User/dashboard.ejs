@@ -11,7 +11,7 @@
     <div class="menu">
         <%- include("partials/bar") %>
 
-        <div class="name"> Welcome,Uday</div>
+        <div class="name"> Welcome, <%= Name %></div>
 
         <div class="charging-percentage">
             <a class="title1">Charging-Status</a>
@@ -171,42 +171,28 @@
         <div class="schedule-date">
             <a class="tille3">Schedule date</a>
             <table class="table1">
-                <tr>
-                    <th>
-                        DATE
-                    </th>
-                    <th>
-                        TIME SLOT
-                    </th>
-                </tr>
+                <% bookings.forEach(function(details){ %>
+                    <tr>
+                        <th>
+                            DATE
+                        </th>
+                        <th>
+                            TIME SLOT
+                        </th>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <%= details.Date %>
+    
+                        </td>
+                        <td>
+                            <%= details.time %>
+                        </td>
+                    </tr>
+                    <% }); %>
 
-                <tr>
-                    <td>
-                        03-04-2023
 
-                    </td>
-                    <td>
-                        9:00-12:00
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        DATE
-                    </th>
-                    <th>
-                        TIME SLOT
-                    </th>
-                </tr>
-
-                <tr>
-                    <td>
-                        03-04-2023
-
-                    </td>
-                    <td>
-                        9:00-12:00
-                    </td>
-                </tr>
                 
             </table>
 
