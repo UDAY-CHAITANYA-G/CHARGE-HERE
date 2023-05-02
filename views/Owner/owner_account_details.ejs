@@ -16,22 +16,22 @@
             <hr>
             <div class="photo"> <img src="" alt="user-photo"> </div>
             <div class="personal-details">
-                <a class="user-name">USER ID:123456796</a>
+                <a class="user-name">Owner ID: <%= owner._id.toString().substring(0,6) %></a>
                 <hr class="line">
-                <a class="details">NAME:xxxxxxxxxx</a>
+                <a class="details">NAME: <%= owner.Name %></a>
                 <br>
                 <hr class="line">
-                <a class="details">MOBILE NUMBER:9829049172</a>
+                <a class="details">MOBILE NUMBER: <%= owner.Mobile %></a>
                 <br>
                 <hr class="line">
-                <a class="details">ADDHARE NUMBER:XXXX XXXX XXXX 
+                <a class="details">ADDHAR NUMBER: <%= owner.Aadhar %> 
                 </a>
                 <br>
                 <hr class="line">
-                <a class="details">Gmail:dahiihfiaegofabo@gmail.com</a>
+                <a class="details">Gmail: <%= owner.UserName %></a>
                 <br>
                 <hr class="line">
-                <a class="details">Address:xx-xx/201,xxxxxxxxx,xxxxxxx,xxxxxx,xxxx,530201
+                <a class="details">Address: <%= station.Address %>
                 </a>
                 <br>
             </div>
@@ -41,42 +41,29 @@
                     <A class="headline">AVALIBLE CHARGING TYPES
                     </A>
                     <hr class="line">
-                <a class="TYPE1">LEVEL-1: YES</a>
-                <br>
-                <hr class="line">
-                <a class="TYPE2">LEVEL-2: NO</a>
-                <br>
-                <hr class="line">
-                <a class="TYPE3">LEVEL-3: NO </a>
-                <br>
+                <% station.AvailableTypes.forEach(function(level){ %>
+                    <% if(level.slots === 0){ %>
+                        <a class="TYPE1"><%= level.level %>: NO</a>
+                    <% }else{ %>
+                        <a class="TYPE1"><%= level.level %>: YES</a>
+                    <% } %>
+                    <br>
+                    <hr class="line">                   
+                <% }); %>
                 </div>
                 <DIV class="slots">
                     <A class="headline">SLOTS
                     </A>
-               
-                <hr class="line">
-                <a class="TYPE1-SLOTS">6
-                </a>
-                <br>
-                <hr class="line">
-                <a class="TYPE2-SLOTS">zero
-                </a>
-                <BR>
-                <hr class="line">
-                <a class="TYPE3-SLOTS">zero
-                </a>
-                <br>
-                
+                    <% station.AvailableTypes.forEach(function(level){ %>
+                        <hr class="line">
+                        <a class="TYPE1-SLOTS"><%= level.slots %>
+                        </a>
+                        <br>
+                        <% }); %>    
+                        <hr class="line">            
                 </DIV>
-                
-
             </div>
-            
-            
-
-        </div>
-
-        
+        </div>      
     </div>
    
 

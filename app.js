@@ -27,6 +27,7 @@ const Auth = require("./Schema/Auth");
 const app = express();
 app.set("view engine","ejs");
 app.use(bodyparser.urlencoded({extended: true}));
+app.use(bodyparser.json());
 app.use(express.static("public"));
 
 app.use(session(({

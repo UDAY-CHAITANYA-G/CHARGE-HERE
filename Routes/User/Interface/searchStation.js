@@ -1,6 +1,10 @@
 const express = require("express");
-
+const Stations = require("../../../Schema/StationSchema");
 const Router = express.Router();
+const Level1Route = require("./stations/Level-1");
+const Level2Route = require("./stations/Level-2");
+const Level3Route = require("./stations/Level-3");
+
 
 Router.get("/",function(req,res){
     if(req.isAuthenticated()&& req.session.role === "user"){
@@ -11,32 +15,9 @@ Router.get("/",function(req,res){
     }
 });
 
-Router.get("/level1",function(req,res){
-    if(req.isAuthenticated()&& req.session.role === "user"){
-        res.render("User/level-1-stations");
-    }
-    else{
-        res.redirect("/login");
-    }
-});
 
-Router.get("/level2",function(req,res){
-    if(req.isAuthenticated()&& req.session.role === "user"){
-        res.render("User/level-2-stations");
-    }
-    else{
-        res.redirect("/login");
-    }
-});
-
-Router.get("/level3",function(req,res){
-    if(req.isAuthenticated()&& req.session.role === "user"){
-        res.render("User/level-3-stations");
-    }
-    else{
-        res.redirect("/login");
-    }
-});
-
+Router.use("/level1",Level1Route);
+Router.use("/level2",Level2Route);
+Router.use("/level3",Level3Route);
 
 module.exports = Router;

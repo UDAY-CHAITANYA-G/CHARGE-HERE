@@ -25,8 +25,8 @@ Router.post("/",function(req,res){
             res.redirect("/signup");
         }
         else{
-            // req.session.role = "user";
             // passport.authenticate("local")(req,res,function(){
+            //     req.session.role = "user";
             //     res.redirect("/user");
             // });
             res.redirect("login");

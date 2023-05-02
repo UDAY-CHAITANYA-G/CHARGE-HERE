@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEVEL-2 STATIONS</title>
-    <link rel="stylesheet" href="/charging-station/css/level-2.css">
+    <link rel="stylesheet" href="/charging-station/css/station.css">
 </head>
 <body>
     <div class="menu">
@@ -13,151 +13,44 @@
 
     </div>
     <div class="title">
-        <a class="title1">LEVEL-2 CHARGING STATIONS</a>
+        <a class="title1"> LEVEL-2 CHARGING STATIONS</a>
         <a class="title1-1">240V</a>
     </div>
-    <div class="station-1">
-        <div class="image-sec">
-            <img class="image11" src="/charging-station/images/icons8-add-image-96.png">
-            
-        </div>
-        <div class="rating">
-           <a class="rating1">Rating </a> 
-           <a class="rating2">3.5/5</a>
-        </div>
-        <div class="details">
-            <a class="name1">
-               STATION-1
-            </a>
-            <div class="address-block"><a class="address">xxxxxxx-near bustand opposite to xxxx tadepalligudem </a></div>
-            <div class="slots">
-                <a class="slots-title">Slots per day</a>
-                <hr>
-                <a class="slots-avaliable">5</a>
+    <% stations.forEach(function(station){ %>
+    <a href="/user/book">
+        <div class="station-1">
+
+            <div class="image-sec">
+                <img class="image11" src="/charging-station/images/icons8-add-image-96.png">                
             </div>
-            <div class="price">
-                <a class="slots-title">Price per kW</a>
-                <hr>
-                <a class="slots-avaliable">35$</a>
+            <div class="details">
+                <a  class="name1">
+                   <%= station.name %>
+                </a>
+                <hr class="hrline">
+                <div class="address-block"><a class="address"> <%= station.address %> </a>
+                
+                </div>
+                <hr class="hrline">
+                <div class="slots">
+                    <a class="slots-title">Slots per day</a>
+                    <hr>
+                    <a class="slots-avaliable"><%= station.slots %></a>
+                </div>
+                <div class="price">
+                    <a class="slots-title">Price per kW</a>
+                    <hr>
+                    <a class="slots-avaliable">20$</a>
+                </div>
+            </div> 
+            <div class="rating">
+                <a class="rating1">Rating: </a> 
+                <a class="rating2">3.5/5</a>
+             </div> 
             </div>
-        </div>
-        
-    </div>
-     <div class="station-2">
-        <div class="image-sec">
-            <img class="image11" src="/charging-station/images/icons8-add-image-96.png" alt="">
-        </div>
-        <div class="rating">
-            <a class="rating1">Rating </a> 
-            <a class="rating2">3/5</a>
-         </div>
-         <div class="details">
-            <a class="name1">
-               STATION-2
-            </a>
-            <div class="address-block"><a class="address">xxxxxxx-near bustand opposite to xxxx tadepalligudem </a></div>
-            <div class="slots">
-                <a class="slots-title">Slots per day</a>
-                <hr>
-                <a class="slots-avaliable">3</a>
-            </div>
-            <div class="price">
-                <a class="slots-title">Price per kW</a>
-                <hr>
-                <a class="slots-avaliable">30$</a>
-            </div>
-        </div>
+    </a>
+    <% }); %>
 
-
-    </div>
-    <div class="station-3">
-        <div class="image-sec">
-            <img class="image11" src="/charging-station/images/icons8-add-image-96.png" alt="">
-        </div>
-        <div class="rating">
-            <a class="rating1">Rating </a> 
-            <a class="rating2">4.5/5</a>
-         </div>
-         <div class="details">
-            <a class="name1">
-               STATION-3
-            </a>
-            <div class="address-block"><a class="address">xxxxxxx-near bustand opposite to xxxx tadepalligudem </a></div>
-            <div class="slots">
-                <a class="slots-title">Slots per day</a>
-                <hr>
-                <a class="slots-avaliable">6</a>
-            </div>
-            <div class="price">
-                <a class="slots-title">Price per kW</a>
-                <hr>
-                <a class="slots-avaliable">35$</a>
-            </div>
-        </div>
-
-
-
-    </div>
-    <div class="station-4">
-        <div class="image-sec">
-            <img class="image11" src="/charging-station/images/icons8-add-image-96.png" alt="">
-        </div>
-        <div class="rating">
-            <a class="rating1">Rating </a> 
-            <a class="rating2">3.5/5</a>
-         </div>
-         <div class="details">
-            <a class="name1">
-               STATION-4
-            </a>
-            <div class="address-block"><a class="address">xxxxxxx-near bustand opposite to xxxx tadepalligudem </a></div>
-            <div class="slots">
-                <a class="slots-title">Slots per day</a>
-                <hr>
-                <a class="slots-avaliable">3</a>
-            </div>
-            <div class="price">
-                <a class="slots-title">Price per kW</a>
-                <hr>
-                <a class="slots-avaliable">30$</a>
-            </div>
-        </div>
-
-
-
-    </div>
-    <div class="station-5">
-        <div class="image-sec">
-            <img class="image11" src="/charging-station/images/icons8-add-image-96.png" alt="">
-        </div>
-        <div class="rating">
-            <a class="rating1">Rating </a> 
-            <a class="rating2">4/5</a>
-         </div>
-         <div class="details">
-            <a class="name1">
-               STATION-5
-            </a>
-            <div class="address-block"><a class="address">xxxxxxx-near bustand opposite to xxxx tadepalligudem </a></div>
-            <div class="slots">
-                <a class="slots-title">Slots per day</a>
-                <hr>
-                <a class="slots-avaliable">5</a>
-            </div>
-            <div class="price">
-                <a class="slots-title">Price per kW</a>
-                <hr>
-                <a class="slots-avaliable">35$</a>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
- </div>
 
 
 

@@ -1,9 +1,12 @@
 const express = require("express");
-
+const Owner = require("../../../Schema/OwnerSchema");
+const Station = require("../../../Schema/StationSchema");
 const Router = express.Router();
+const AccountRoute = require("./Account");
 
 Router.get("/",function(req,res){
     if(req.isAuthenticated() && req.session.role === "owner" ){
+        console.log(req.user.username); 
         res.render("Owner/station_dashboard");
     }
     else{
@@ -29,14 +32,6 @@ Router.get("/slotpricing",function(req,res){
     }
 });
 
-Router.get("/account",function(req,res){
-    if(req.isAuthenticated() && req.session.role === "owner"){
-        res.render("Owner/owner_account_details");
-    }
-    else{
-        res.redirect("/ownerlogin")
-    }
-});
 
 Router.get("/help",function(req,res){
     if(req.isAuthenticated() && req.session.role === "owner"){
@@ -46,5 +41,8 @@ Router.get("/help",function(req,res){
         res.redirect("/ownerlogin")
     }
 });
+
+Router.use("/account",AccountRoute);
+
 
 module.exports = Router;

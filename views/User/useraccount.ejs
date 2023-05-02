@@ -20,18 +20,18 @@
             <hr>
             <div class="photo"> <img src="" alt="user-photo"> </div>
             <div class="personal-details">
-                <a class="user-name">USER ID:123456796</a>
+                <a class="user-name">USER ID: <%= user._id.toString().substring(0,6) %></a>
                 <hr class="line">
-                <a class="details">NAME:xxxxxxxxxx</a>
+                <a class="details">NAME: <%= user.Name %></a>
                 <br>
                 <hr class="line">
-                <a class="details">MOBILE NUMBER:9829049172</a>
+                <a class="details">MOBILE NUMBER: <%= user.Mobile %></a>
                 <br>
                 <hr class="line">
-                <a class="details">Gmail:dahiihfiaegofabo@gmail.com</a>
+                <a class="details">Gmail: <%= user.Mail %></a>
                 <br>
                 <hr class="line">
-                <a class="details">Address:xx-xx/201,xxxxxxxxx,xxxxxxx,xxxxxx,xxxx,530201
+                <a class="details">Address: <%= user.Address %>
                     
                 </a>
                 <br>

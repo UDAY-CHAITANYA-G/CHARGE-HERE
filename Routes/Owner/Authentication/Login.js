@@ -7,6 +7,11 @@ Router.get("/",function(req,res){
     res.render("ownerlogin");
 });
 
+
+//AAAA - 12345
+//BBBB - 12345
+//CCCC - 12345
+//DDDD - 12345
 Router.post("/",function(req,res){
     const user = new User({
         username: req.body.username,
@@ -19,8 +24,8 @@ Router.post("/",function(req,res){
         }
         else{
             if(user){
-                    req.session.role="owner";
                     passport.authenticate("local")(req,res,function(){
+                        req.session.role="owner";
                         res.redirect("/owner");
                     });
             }

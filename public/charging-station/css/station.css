@@ -1,6 +1,6 @@
 
 body{
-    background-color: black;
+    background-color: rgb(63, 71, 78);
     height: 740px;
     margin: 0px;
 }
@@ -103,9 +103,8 @@ body{
 .station-1{
     position: relative;
     background-color: #6d686861;
-    width: 400px;
-    height: 250px;
-   
+    width: 79rem;
+    height: 18rem;
     left: 150px;
     color: #f2eaea;
     top: -650px;
@@ -118,26 +117,26 @@ body{
 }
 .rating{
     position: relative;
-    width: 130px;
-    height: 30px;
-    top: 30px;
-    left: 8px;
-    background-color:#6d686861;
+    width: 196px;
+    height: 40px;
+    top: -19rem;
+    left: 40rem;
+    background-color: #6d686861;
 }
 .rating1{
     position: relative;
-    font-size: 15px ;
-    top:7px;
-    left:10px;
+    font-size: 27px;
+    top: 7px;
+    left: 10px;
     color: white;
     text-align: left;
 }
 
 .rating2{
     position: relative;
-    font-size: 15px ;
-    top:7px;
-    left:40px;
+    font-size: 23px;
+    top: 7px;
+    left: 40px;
     color: white;
     text-align: right;
     
@@ -145,17 +144,16 @@ body{
 
 .details{
     position: relative;
-    width: 240px;
-    height: 230px;
-    top: -150px;
-    left: 150px;
+    width: 39rem;
+    height: 16.5rem;
+    top: -16rem;
+    left: 28rem;
     background-color: #6d686861;
-
 }
 
 .name1{
     position: relative;
-    font-size: 20px;
+    font-size: 46px;
     color: white;
     left: 5px;
     top: 5px;
@@ -163,8 +161,10 @@ body{
 
 .address-block{
     position: relative;
-    width: 240px;
-    height: 100px;
+    width: 39rem;
+    height: 8rem;
+    top: 1rem;
+    font-size: 25px;
 }
 .address{
     position: relative;
@@ -173,32 +173,38 @@ body{
 
 .slots{
     position: relative;
-    width: 94px;
-    height: 104px;
+    width: 155px;
+    top: -12rem;
+    left: 40rem;
+    height: 100px;
     border: solid;
 }
 
 .price{
     position: relative;
-    width: 134px;
-    height: 104px;
-    left: 100px;
-    top: -109px;
+    width: 156px;
+    height: 103px;
+    left: 40rem;
+    top: -181px;
     border: solid;
 
 }
 .slots-title{
     position: relative;
-    font-size: 20px;
-    left: 10px;
+    font-size: 24px;
+    left: 17px;
+    top: 5px;
 }
+
 
 .slots-avaliable{
     position: relative;
-    font-size: 29px;
-    left: 40px;
+    font-size: 42px;
+    top: 2px;
+    left: 62px;
 
 }
+
 
 
 
@@ -256,17 +262,18 @@ body{
 
 .image11{
     position: relative;
-    top: 40px;
-    left: 40px;
-    width: 30px;
-    height: 30px;
+    
+    width: 26rem;
+    height: 17rem;
+
 }
 .image-sec{
     position: relative;
     top: 10px;
     left: 10px;
-    width: 130px;
-    height: 130px;
+    width: 26rem;
+    height: 17rem;
+
     background-color: white;
 
 }

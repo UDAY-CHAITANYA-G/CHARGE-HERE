@@ -9,6 +9,8 @@ Router.get("/",function(req,res){
     res.render("ownerSignup");
 });
 
+//longitute lattitude
+
 Router.post("/",function(req,res){
     const owner = new Owner({
         Name: req.body.name,
@@ -25,16 +27,16 @@ Router.post("/",function(req,res){
     });
     owner.save();
     station.save();
+
     User.register({username: req.body.username},req.body.password,function(err){
         if(err){
             console.log(err);
-            res.redirect("/ownersignup");
+            res.send(err);
         }
         else{
-            res.redirect("/ownerlogin");
+            res.send("Success")
         }
     });
-
 });
 
 module.exports = Router;
