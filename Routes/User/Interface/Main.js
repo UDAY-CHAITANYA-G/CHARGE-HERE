@@ -5,6 +5,7 @@ const BookingRoute = require("./Book");
 const AccountRoute = require("./Account");
 const DashBoardRoute = require("./dashboard");
 const scheduleRoute = require("./Schedule");
+const LocationRoute = require("./Locate");
 
 Router.get("/",function(req,res){
     if(req.isAuthenticated() && req.session.role === "user"){
@@ -40,5 +41,6 @@ Router.use("/search",searchRoute);
 Router.use("/book",BookingRoute);
 Router.use("/account",AccountRoute);
 Router.use("/schedule",scheduleRoute);
+Router.use("/locateme",LocationRoute);
 
 module.exports = Router;

@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locating in map</title>
+
+
+    <!-- link for css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/> 
+    <!-- lesflet routing css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <!-- bootstarp js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- bootstrap css  4 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+     <!-- link for  leaflet js -->
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <!-- lesflet routing js -->
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+     
+     
+     <style>
+        #map { height: 500px; }
+       </style>
+
+</head>
+<body>
+   
+    <h1>locating </h1>
+    <input type="text" name="" id="var" value="5" hidden/>
+    <button id="go">go</button>
+    <button id="all_locations">All Nearby Locations</button>
+    
+   
+    <div id="map"></div>  
+
+</body>
+
+<script>
+    const value = document.getElementById("var");
+    var map = L.map('map').setView([16.8073, 81.5316], 14);
+    zoomed:15
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+
+navigator.geolocation.watchPosition(sucess,error);
+
+let marker, circle, zoomed;
+
+function sucess(posi) {
+    const lat = posi.coords.latitude;
+    const lng = posi.coords.longitude;
+    const accuracy = posi.coords.accuracy;
+    
+
+   
+    
+     
+    if (marker) {
+        map.removeLayer(marker);
+        map.removeLayer(circle);
+        
+    }
+
+
+
+    
+    
+    
+    
+    if (zoomed) {
+
+        zoomed = map.fitBounds(circle.getBounds())
+    }
+  
+
+    map.setView([lat,lng])
+    
+    
+}
+
+function error(err) {
+    if (err.code == 1) {
+        alert("please allow geolocation access");
+        
+    } else{
+        alert("cannot get location")
+    }
+    
+}
+   
+//   some orbitary points where we assume that charging stations are present
+
+    const lat1 = 16.816216;
+    const lng1 = 81.525332;
+
+    const lat2 = 16.824272;
+    const lng2 = 81.517388;
+    
+    const lat3 = 16.792125;
+    const lng3 = 81.527176;          
+
+
+    const lat4 = 16.752195;
+    const lng4 = 81.673134;
+
+    const lat5 = 17.007172;
+    const lng5 = 81.72958;
+
+    const lat6 = 16.830593;
+    const lng6 = 81.525109;
+
+    const [lat7,lng7] = [16.791939, 81.526670];
+
+
+function sucess(position) {
+    const lat = position.coords.latitude;
+    const lng = position.coords.longitude;
+    const accuracy = position.coords.accuracy;
+    marker = L.marker([lat,lng]).addTo(map);
+    circle = L.circle([lat,lng],{radius:accuracy}).addTo(map);  
+//    value.addEventListener("change",function(event){
+//     val = value.value;
+//    });
+const val = value.value
+     document.getElementById("go").addEventListener("click",routing)
+              function routing() {
+                if(val === "1"){
+                    L.Routing.control({
+                    waypoints:[
+                        L.latLng([lat,lng]),
+                        L.latLng([lat1,lng1])
+                        ]
+
+                    }).addTo(map)
+                } else if(val === "2"){
+                    L.Routing.control({
+                    waypoints:[
+                        L.latLng([lat,lng]),
+                        L.latLng([lat2,lng2])
+                        ]
+
+                    }).addTo(map)
+                } else if(val === "3"){
+                    L.Routing.control({
+                    waypoints:[
+                        L.latLng([lat,lng]),
+                        L.latLng([lat3,lng3])
+                        ]
+
+                    }).addTo(map)
+                } else if(val === "4"){
+                    L.Routing.control({
+                    waypoints:[
+                        L.latLng([lat,lng]),
+                        L.latLng([lat4,lng4])
+                        ]
+
+                    }).addTo(map)
+                } else if(val === "5"){
+                    L.Routing.control({
+                    waypoints:[
+                        L.latLng([lat,lng]),
+                        L.latLng([lat5,lng5])
+                        ]
+
+                    }).addTo(map)
+                } else if(val === "6"){
+                    L.Routing.control({
+                    waypoints:[
+                        L.latLng([lat,lng]),
+                        L.latLng([lat6,lng6])
+                        ]
+
+                    }).addTo(map)
+                } else if(val === "7"){
+                    L.Routing.control({
+                    waypoints:[
+                        L.latLng([lat,lng]),
+                        L.latLng([lat7,lng7])
+                        ]
+
+                    }).addTo(map)
+                } else{
+                    L.Routing.control({
+                    waypoints:[
+                        L.latLng([lat,lng]),
+                        L.latLng([lat,lng])
+                        ]
+
+                    }).addTo(map) 
+                }
+
+                    
+              }  
+                
+
+
+    document.getElementById("all_locations").addEventListener("click",locate_station);
+    function locate_station() {
+        marker = L.marker([lat,lng]).addTo(map)
+        marker = L.marker([lat1,lng1]).addTo(map)
+        marker = L.marker([lat2,lng2]).addTo(map)
+        marker = L.marker([lat3,lng3]).addTo(map)
+        marker = L.marker([lat4,lng4]).addTo(map)
+        marker = L.marker([lat5,lng5]).addTo(map)
+        marker = L.marker([lat6,lng6]).addTo(map)
+        marker = L.marker([lat7,lng7]).addTo(map)
+    }
+   
+
+}
+  
+
+
+
+</script>
+<!-- <script src="index.js"></script> -->
+</html>

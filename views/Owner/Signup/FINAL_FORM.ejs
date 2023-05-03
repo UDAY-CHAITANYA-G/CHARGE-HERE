@@ -41,7 +41,7 @@
                   <% if(type.level === "Level 1"){ %>
                     <% type.timeslots.forEach(function(slot){ %>
                       <label for="TIME_SLOT_1" class="form-label">TIME SLOT :</label>
-                      <input type="text" name="TIME_SLOT_1" class="form-control" value="<%= slot.slots %>"/>
+                      <input type="text" name="TIME_SLOT_1" class="form-control" value="<%= slot %>"/>
                     <% }); %>
                   <% } %>
                 <% } %>
@@ -55,7 +55,7 @@
                   <input type="text" name="Name" class="form-control" value="<%= type.slots %>"/>
                   <% type.timeslots.forEach(function(slot){ %>
                     <label for="TIME_SLOT_1" class="form-label">TIME SLOT :</label>
-                    <input type="text" name="TIME_SLOT_1" class="form-control" value="<%= slot.slots %>"/>
+                    <input type="text" name="TIME_SLOT_1" class="form-control" value="<%= slot %>"/>
                   <% }); %>
                   <label for="PRICE" class="form-label">PRICE PER KW OF CHARGING</label>
                   <input type="text" name="PRICE" class="form-control" value="<%= type.Price %>"/>

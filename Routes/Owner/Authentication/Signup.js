@@ -28,7 +28,6 @@ Router.post("/",function(req,res){
     details.UserName = req.body.USER_NAME;
     details.Password = req.body.password;
 
-    console.log(details);
     console.log("Level-1");
     res.redirect("/ownersignup/level-1");
 });
@@ -39,15 +38,15 @@ Router.get("/level-1",function(req,res){
 });
 
 Router.post("/level-1",function(req,res){
-    timeslots.push({
-       slots: req.body.TIME_SLOT_1    
-    });
-    timeslots.push({
-        slots: req.body.TIME_SLOT_2    
-     });
-     timeslots.push({
-        slots: req.body.TIME_SLOT_3    
-     });
+    timeslots.push(
+     req.body.TIME_SLOT_1    
+    );
+    timeslots.push(
+     req.body.TIME_SLOT_2    
+     );
+     timeslots.push(
+     req.body.TIME_SLOT_3    
+     );
     details.AvailableTypes.push({
         level: "Level 1",
         slots: req.body.type,
@@ -55,7 +54,6 @@ Router.post("/level-1",function(req,res){
         Price: req.body.PRICE
     });
     timeslots=[]
-    console.log(details);
     console.log("Level-2");
     res.redirect("/ownersignup/level-2")
 });
@@ -66,24 +64,24 @@ Router.get("/level-2",function(req,res){
 });
 
 Router.post("/level-2",function(req,res){
-    timeslots.push({
-       slots: req.body.TIME_SLOT_1    
-    });
-    timeslots.push({
-        slots: req.body.TIME_SLOT_2    
-     });
-     timeslots.push({
-        slots: req.body.TIME_SLOT_3    
-     });
-     timeslots.push({
-        slots: req.body.TIME_SLOT_4    
-     });
-     timeslots.push({
-        slots: req.body.TIME_SLOT_5    
-     });
-     timeslots.push({
-        slots: req.body.TIME_SLOT_6    
-     });
+    timeslots.push(
+        req.body.TIME_SLOT_1    
+    );
+    timeslots.push(
+         req.body.TIME_SLOT_2    
+     );
+     timeslots.push(
+         req.body.TIME_SLOT_3    
+     );
+     timeslots.push(
+         req.body.TIME_SLOT_4    
+     );
+     timeslots.push(
+         req.body.TIME_SLOT_5    
+     );
+     timeslots.push(
+         req.body.TIME_SLOT_6    
+     );
     details.AvailableTypes.push({
         level: "Level 2",
         slots: req.body.type,
@@ -91,7 +89,6 @@ Router.post("/level-2",function(req,res){
         Price: req.body.PRICE
     });
     timeslots=[]
-    console.log(details);
     console.log("Level-3");
     res.redirect("/ownersignup/level-3");
 });
@@ -101,9 +98,9 @@ Router.get("/level-3",function(req,res){
 });
 
 Router.post("/level-3",function(req,res){
-    timeslots.push({
-       slots: "Any"    
-    });
+    timeslots.push(
+        "Any"    
+    );
 
     details.AvailableTypes.push({
         level: "Level 3",
@@ -143,7 +140,7 @@ Router.post("/final",function(req,res){
             res.send(err);
         }
         else{
-            res.redirect("/userlogin");
+            res.redirect("/login");
         }
     });
 });
