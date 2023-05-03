@@ -5,7 +5,6 @@ const Router = express.Router();
 
 Router.get("/",function(req,res){
     if(req.isAuthenticated() && req.session.role === "owner"){
-        console.log(req.user.username);
         Owner.findOne({UserName: req.user.username},function(err,foundOwner){
             if(err){
                 console.log(err);

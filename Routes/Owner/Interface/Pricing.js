@@ -10,7 +10,6 @@ Router.get("/",async function(req,res){
             if(!err){
                 History.find({StationName: owner.station_Name}, async function(err,History){
                     if(!err){
-                        console.log(History);
                         let station = await Station.findOne({station_Name: owner.station_Name});
                         res.render("Owner/slotpricing-and-details",{histories: History,station: station});
                     }
