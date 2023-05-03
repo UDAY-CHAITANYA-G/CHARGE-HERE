@@ -1,5 +1,5 @@
 const express = require("express");
-
+const BookingRoute = require("./Booking")
 const Router = express.Router();
 
 
@@ -18,5 +18,7 @@ Router.get("/EV%20battery",function(req,res){
 Router.get("/usecases",function(req,res){
     res.render("usecases");
 });
+
+Router.use("/bookings",BookingRoute);
 
 module.exports = Router;

@@ -7,26 +7,21 @@ const Router = express.Router();
 Router.get("/:level/:station",function(req,res){
      if(req.isAuthenticated()&& req.session.role === "user"){
         Station.findOne({station_Name: req.params.station},function(err,station){
-            booking.find({StationName: req.params.station,chargerType: req.params.level},function(err,bookings){
-                let bookedslots = 0;
-                bookings.forEach(booking => {
-                    if(booking.slotNumber){
-                        bookedslots = bookedslots + 1
-                    }
-                });
-                let availableSlotCount = 0
+            if(!err){
                 let price;
+                let Availslots = [];
                 station.AvailableTypes.map(function(type){
                     if(type.level === req.params.level && type.slots !== 0){
-                        availableSlotCount = availableSlotCount+type.slots
                         price = type.Price;
+                        type.timeslots.forEach(slot => {
+                            
+                            Availslots.push(slot);
+                        });;
                     }
-                });  
-                availableSlotCount = availableSlotCount - bookedslots;
-                res.render("User/station-interface",{station: station,slots: availableSlotCount ,price: price,level: req.params.level});
-            });     
+                });
+                res.render("User/station-interface",{station: station,price: price, availSlot: Availslots,level: req.params.level});
+            }
         });
-
     }
     else{
         res.redirect("/login");

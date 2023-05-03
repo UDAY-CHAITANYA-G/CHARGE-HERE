@@ -12,6 +12,7 @@ const passportLocalMongoose = require("passport-local-mongoose");
 
 //Routes
 const MainRoute = require("./Routes/Main/Home");
+const LogoutRoute = require("./Routes/Main/Logout");
 
 const UserLoginRoute = require("./Routes/User/Authentication/Login");
 const UserSignupRoute = require("./Routes/User/Authentication/Signup");
@@ -60,6 +61,9 @@ app.use("/user",UserInterface);
 app.use("/ownerlogin",OwnerLoginRoute);
 app.use("/ownersignup",OwnerSignupRoute);
 app.use("/owner",OwnerInterface);
+
+//Logout
+app.use("/logout",LogoutRoute);
 
 app.listen(3000,function(){
     console.log("Server started on port 3000");

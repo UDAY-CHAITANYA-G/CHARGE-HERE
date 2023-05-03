@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/charging-station/css/stationdetails.css">
 </head>
 <body>
+    <input id="station" value="<%= station.station_Name %>" hidden/>
+    <input id="type" value="<%= level %>" hidden/>
     <div class="menu">
         <%- include("partials/bar") %>
     </div>
@@ -72,9 +74,12 @@
             <a class="slot-details1"> SLOTS AVALIABLE</a>
             <br>
             <br>
-            <a > <%= slots %> </a>
-            <input type="time" name="" id="start-slot">
-            <input type="time" name="" id="end-slot">
+            <a > <select name="slot" id="slot">
+                <option value="hi" disabled selected class="options">Select a date first</option>
+                <% availSlot.forEach(function(avail){ %>
+                    <option value="<%= avail %>" disabled class="options" id="<%= avail %>"><%= avail %></option>
+                    <% }); %>
+            </select> </a>
             
 
         </div>
@@ -135,38 +140,5 @@
     </div>
    
 </body>
-<script>
-    const dates = document.getElementsByClassName("date");
-    const bookeddate = document.getElementById("booked-date");
-    const slotstart = document.getElementById("start-slot");
-    const slotend = document.getElementById("end-slot");
-    const booked_slot = document.getElementById("booked-slot");
-
-    const formdate = document.getElementById("date");
-    const formtime = document.getElementById("time");
-    const frombtn = document.getElementById("btn");
-
-    for(let i=0;i<dates.length;i++){
-        dates[i].addEventListener("click",function(event){
-            bookeddate.innerHTML= dates[i].innerHTML +"-03-2023";
-            formdate.value = bookeddate.innerHTML
-        });
-    }
-    let slot = "" ;
-    slotstart.addEventListener("change",function(event){
-        slot = slot + slotstart.value.toString();
-        console.log(slot);
-    });
-    slotend.addEventListener("change",function(event){
-        slot = slot + "-" + slotend.value.toString();
-        booked_slot.innerHTML = slot;
-        formtime.value = booked_slot.innerHTML;
-    });
-
-    frombtn.addEventListener("submit",function(event){
-        alert("Booked successfully");
-    });
-
-
-</script>
+<script src="/station.js"></script>
 </html>

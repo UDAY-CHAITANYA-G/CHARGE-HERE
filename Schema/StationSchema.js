@@ -6,9 +6,7 @@ const StationSchema = new mongoose.Schema({
     AvailableTypes: [{
         level: {type: String},
         slots:{type: Number},
-        timeslots: [{
-            slots: {type: String},
-            }],
+        timeslots: [{type: String}],
         Rating:{type:String},
         Price:{type:Number}
     }]
