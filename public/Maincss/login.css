@@ -1,17 +1,17 @@
 .body1{
     background-color: #000;
-    height: 992px;
+    height: 729px;
 }
 .img1{
     width: 100%;
-    height:990px;
+    height: 744px;
 }
 .box{
     width: 500px;
     height: 990px;
     position: relative;
     top: -990px;
-    left: 1400px;
+    left: 60rem;
     background-color: black;
 }
 
@@ -30,11 +30,10 @@
     width: 400px;
     height: 400px;
     position: relative;
-    left: 1450px;
-    top: -1700px;
+    left: 63rem;
+    top: -1557px;
     border-style: groove;
     border: 20px;
- 
     background-color: #ffffff;
     border-radius: 15%;
 }
