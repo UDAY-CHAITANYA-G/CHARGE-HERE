@@ -23,7 +23,6 @@ Router.get("/:level/:station",function(req,res){
                     }
                 });  
                 availableSlotCount = availableSlotCount - bookedslots;
-                console.log(availableSlotCount);
                 res.render("User/station-interface",{station: station,slots: availableSlotCount ,price: price,level: req.params.level});
             });     
         });
