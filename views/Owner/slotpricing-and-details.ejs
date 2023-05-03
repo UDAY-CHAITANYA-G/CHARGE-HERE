@@ -18,13 +18,28 @@
                 <A class="headline">AVALIBLE CHARGING TYPES
                 </A>
                 <hr class="line">
-            <a class="TYPE1">LEVEL-1: YES</a>
+                <% let l1 = "NO" %>
+                <% let l2 = "NO" %>
+                <% let l3 = "NO" %>
+                <% station.AvailableTypes.forEach(function(type){ %> 
+                    <% if(type.level === "Level 1" && type.slots !== 0) {%>
+                        <%  l1 = "YES" %>
+                    <% } %>
+                    <% if(type.level === "Level 2" && type.slots !== 0) {%>
+                        <%  l2 = "YES" %>
+
+                    <% } %>
+                    <% if(type.level === "Level 3" && type.slots !== 0) {%>
+                        <%  l3 = "YES" %>
+                    <% } %>
+                <% }); %>          
+            <a class="TYPE1">LEVEL-1: <%= l1 %></a>
             <br>
             <hr class="line">
-            <a class="TYPE2">LEVEL-2: NO</a>
+            <a class="TYPE2">LEVEL-2: <%= l2 %></a>
             <br>
             <hr class="line">
-            <a class="TYPE3">LEVEL-3: NO </a>
+            <a class="TYPE3">LEVEL-3: <%= l3 %> </a>
             <br>
             </div>
             <DIV class="slots">
@@ -33,11 +48,11 @@
                 <form action="/owners/slotpricing?_method=patch" method="post">
                 <% station.AvailableTypes.forEach(function(level){ %>                  
                     <hr class="line">
-                    <a class="TYPE1-SLOTS"> <input type="number" name="newSlots" value="<%= level.slots %>"/>
+                    <a class="TYPE1-SLOTS"> <%= level.slots %> 
                     </a>
                     <br>              
                 <% }); %>          
-            <input type="submit" value="submit">
+            <input type="submit" value="submit" hidden>
         </form>
             </DIV>   
         </div>
