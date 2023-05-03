@@ -30,20 +30,15 @@
             <DIV class="slots">
                 <A class="headline">SLOTS
                 </A>
-           
-            <hr class="line">
-            <a class="TYPE1-SLOTS">6
-            </a>
-            <br>
-            <hr class="line">
-            <a class="TYPE2-SLOTS">zero
-            </a>
-            <BR>
-            <hr class="line">
-            <a class="TYPE3-SLOTS">zero
-            </a>
-            <br>
-            
+                <form action="/owners/slotpricing?_method=patch" method="post">
+                <% station.AvailableTypes.forEach(function(level){ %>                  
+                    <hr class="line">
+                    <a class="TYPE1-SLOTS"> <input type="number" name="newSlots" value="<%= level.slots %>"/>
+                    </a>
+                    <br>              
+                <% }); %>          
+            <input type="submit" value="submit">
+        </form>
             </DIV>   
         </div>
 

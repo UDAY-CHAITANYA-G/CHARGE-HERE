@@ -4,7 +4,7 @@ const express = require("express");
 const bodyparser = require("body-parser");
 const _ = require("lodash");
 const ejs = require("ejs");
-
+const methodOverride = require("method-override");
 const mongoose = require("mongoose");
 const session = require("express-session");
 const passport = require("passport");
@@ -29,6 +29,7 @@ app.set("view engine","ejs");
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(bodyparser.json());
 app.use(express.static("public"));
+app.use(methodOverride("_method"));
 
 app.use(session(({
     secret: process.env.SECRET,

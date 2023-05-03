@@ -13,9 +13,9 @@
     </div>
 
     <div class="station-details">
-        <a class="station-name">STATION-1</a>
+        <a class="station-name"><%= station.station_Name %></a>
         <hr>
-        <a class="address">xxxxxxx-near bustand ,opposite to xxxx ,tadepalligudem</a>
+        <a class="address"><%= station.Address %></a>
     </div>
 
     <div class="book-station">
@@ -33,43 +33,48 @@
               <li class="day-name"><a class="day">Fri</a></li>
               <li class="day-name"><a class="day">Sat</a></li>
               
-              <li class="first-day">1</li>
+              <li class="first-day date">1</li>
     
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
-              <li>6</li>
-              <li>7</li>
-              <li>8</li>
-              <li>9</li>
-              <li>10</li>
-              <li>11</li>
-              <li>12</li>
-              <li>13</li>
-              <li>14</li>
-              <li>15</li>
-              <li>16</li>
-              <li>17</li>
-              <li>18</li>
-              <li>19</li>
-              <li>20</li>
-              <li>21</li>
-              <li>22</li>
-              <li>23</li>
-              <li>24</li>
-              <li>25</li>
-              <li>26</li>
-              <li>27</li>
-              <li>28</li>
-              <li>29</li>
-              <li>30</li>
-              <li>31</li>
+              <li class="date">2</li>
+              <li class="date">3</li>
+              <li class="date">4</li>
+              <li class="date">5</li>
+              <li class="date">6</li>
+              <li class="date">7</li>
+              <li class="date">8</li>
+              <li class="date">9</li>
+              <li class="date">10</li>
+              <li class="date">11</li>
+              <li class="date">12</li>
+              <li class="date">13</li>
+              <li class="date">14</li>
+              <li class="date">15</li>
+              <li class="date">16</li>
+              <li class="date">17</li>
+              <li class="date">18</li>
+              <li class="date">19</li>
+              <li class="date">20</li>
+              <li class="date">21</li>
+              <li class="date">22</li>
+              <li class="date">23</li>
+              <li class="date">24</li>
+              <li class="date">25</li>
+              <li class="date">26</li>
+              <li class="date">27</li>
+              <li class="date">28</li>
+              <li class="date">29</li>
+              <li class="date">30</li>
+              <li class="date">31</li>
             
             </ol>
         </div>
         <div class="slot-details">
             <a class="slot-details1"> SLOTS AVALIABLE</a>
+            <br>
+            <br>
+            <a > <%= slots %> </a>
+            <input type="time" name="" id="start-slot">
+            <input type="time" name="" id="end-slot">
             
 
         </div>
@@ -97,21 +102,28 @@
                 </tr>
 
                 <tr>
-                    <td>
-                        03-03-2023
+                    <td id="booked-date">
+                        
                     </td>
                     <td>
-                        3
+                        1
                     </td>
 
-                    <td>
-                     8:00-16:00
+                    <td id="booked-slot">
+
                     </td>
                     <td>
-                      20$
+                      <%= price %>$
                     </td>
                     <td>
-                       <a href="dashboard.html">book</a>
+                       <form action="/user/book/<%= station.station_Name %>/<%= level %>" method="post">
+                        <input type="hidden" name="date" id="date">
+                        <input type="hidden" name="slotNumber" id="slot" value="1">
+                        <input type="hidden" name="time" id="time">
+                        <input type="hidden" name="price" id="price" value="<%= price %>">
+                        <input type="hidden" name="status" value="booked">
+                        <input type="submit" value="submit" id="btn">
+                       </form>
                     </td>
                 </tr>
             
@@ -121,60 +133,40 @@
             <hr>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
+   
 </body>
+<script>
+    const dates = document.getElementsByClassName("date");
+    const bookeddate = document.getElementById("booked-date");
+    const slotstart = document.getElementById("start-slot");
+    const slotend = document.getElementById("end-slot");
+    const booked_slot = document.getElementById("booked-slot");
+
+    const formdate = document.getElementById("date");
+    const formtime = document.getElementById("time");
+    const frombtn = document.getElementById("btn");
+
+    for(let i=0;i<dates.length;i++){
+        dates[i].addEventListener("click",function(event){
+            bookeddate.innerHTML= dates[i].innerHTML +"-03-2023";
+            formdate.value = bookeddate.innerHTML
+        });
+    }
+    let slot = "" ;
+    slotstart.addEventListener("change",function(event){
+        slot = slot + slotstart.value.toString();
+        console.log(slot);
+    });
+    slotend.addEventListener("change",function(event){
+        slot = slot + "-" + slotend.value.toString();
+        booked_slot.innerHTML = slot;
+        formtime.value = booked_slot.innerHTML;
+    });
+
+    frombtn.addEventListener("submit",function(event){
+        alert("Booked successfully");
+    });
+
+
+</script>
 </html>
